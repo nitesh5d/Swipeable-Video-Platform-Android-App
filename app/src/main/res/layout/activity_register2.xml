@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity2"
+    android:background="#F3F3F3">
+
+
+    <ImageView
+        android:id="@+id/registerScreenLogo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/registerScreenSignUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SETUP ACCOUNT"
+        android:textSize="18sp"
+        android:letterSpacing="0.20"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/Black"
+        android:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerScreenLogo" />
+
+    <LinearLayout
+        android:id="@+id/registerMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/registerScreenSignUpText">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/uploadDp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/choose-dp-icon.png"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Click to choose a Display Picture)"
+            android:textColor="@color/Black"
+            android:textSize="9dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/neumorphCardFullName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/edit_text_bg"
+            >
+
+            <EditText
+                android:id="@+id/fullNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:hint="Ex. Lousic User"
+                android:textCursorDrawable="@drawable/cursor"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/neumorphCardDisplayName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/edit_text_bg"
+            >
+
+            <EditText
+                android:id="@+id/displayNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:hint="Ex. lousicuser"
+                android:textCursorDrawable="@drawable/cursor"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardViewFinish"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_round_arrow_forward_24">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finish"
+                android:textSize="20sp"
+                android:textColor="@color/Black"
+                android:letterSpacing="0.1"
+                android:layout_gravity="center"/>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <ProgressBar
+            android:id="@+id/register2ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:background="@drawable/progress_bar_dark_bg"
+            android:indeterminateTint="@color/White"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

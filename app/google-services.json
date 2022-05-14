@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "686983696132",
+    "project_id": "lousic-39a01",
+    "storage_bucket": "lousic-39a01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686983696132:android:e2e4614c280a3794f04a51",
+        "android_client_info": {
+          "package_name": "com.lousic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686983696132-v07v9g5t9joeat7j771hmp603inlfnr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPBseWm-arXyd94DaY8dT42h9dmP3MXGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686983696132-v07v9g5t9joeat7j771hmp603inlfnr6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
